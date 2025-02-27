@@ -127,7 +127,7 @@ class JsonResource implements ResourceInterface, RelatedMetaInformationInterface
      * @return ResourceInterface
      * @throws \InvalidArgumentException
      */
-    public function duplicate(string $id = null): ResourceInterface
+    public function duplicate(?string $id = null): ResourceInterface
     {
         $resource = new self($this->type(), $id ?? $this->id(), $this->attributes()->all());
 

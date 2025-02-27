@@ -49,5 +49,5 @@ interface ResourceInterface
      * @param string $id
      * @return ResourceInterface
      */
-    public function duplicate(string $id = null): ResourceInterface;
+    public function duplicate(?string $id = null): ResourceInterface;
 }

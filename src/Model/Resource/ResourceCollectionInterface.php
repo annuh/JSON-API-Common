@@ -35,7 +35,7 @@ interface ResourceCollectionInterface extends CollectionInterface
      * @param string $type
      * @return ResourceInterface
      */
-    public function first(string $type = null): ResourceInterface;
+    public function first(?string $type = null): ResourceInterface;
 
     /**
      * @param ResourceInterface $resource
